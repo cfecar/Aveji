@@ -1,1 +1,60 @@
-@import url(/fonts/fonts.css);/*# sourceMappingURL=style.css.map */
+@import url(/fonts/fonts.css);
+body {
+  color: #212529;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Roboto", system-ui;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  max-width: 1376px;
+  padding: 0 32px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.header .container {
+  padding-top: 12px;
+}
+.header__logo-link {
+  color: #212529;
+  font-size: 18px;
+  text-decoration: none;
+}
+.header__logo-link:hover {
+  color: #DDD7C0;
+}
+.header__logo-link:active {
+  color: #CBC6B2;
+}
+.header__logo-link:first-child {
+  grid-column: 1/9;
+}
+.header__logo-link:last-child {
+  grid-column: 11/13;
+  text-align: right;
+}
+
+.nav {
+  grid-column: 9/11;
+}
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.nav__list-item--limk {
+  color: #212529;
+  font-size: 18px;
+  text-decoration: none;
+}
+.nav__list-item--limk:hover {
+  color: #DDD7C0;
+}
+.nav__list-item--limk:active {
+  color: #CBC6B2;
+}/*# sourceMappingURL=style.css.map */
